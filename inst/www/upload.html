@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Uploading a file</title>
+    <title>Cargar archivo</title>
     
     <!-- Include order: first jquery, then opencpu.js, and then your code -->
     <script src="opencpu/jquery-1.10.2.min.js"></script>
@@ -57,20 +57,22 @@
   </head>
     
   <body>
-    <h1>Uploading a File</h1>
+    <h1>Cargando un archivo</h1>
     
     <b>File</b> <input type="file" id="csvfile"> 
     <br />
     
-    <b>Header</b> <select id="header">
-      <option>true</option>
-      <option>false</option>
+    <b>Tiene encabezado?</b> <select id="header">
+      <option>Si!</option>
+      <option>No!</option>
     </select> 
     
     <br />
-    <button id="submitbutton" type="button">Upload CSV file!</button>
+    <button id="submitbutton" type="button">Cargar archivo!</button>
     <br>
 
+    <a target="_blank" id="printlink">Ver datos</a>
+    <!-- esto es un comentario
     <p>Export the data frame:</p>
 
     <ol>
@@ -91,6 +93,6 @@
       This means that this won't work in internet explorer version 9 or lower.
       You need Firefox, Chrome, Safari or Internet Explorer 10+
     </p>
-    
+    -->
   </body>
 </html>
