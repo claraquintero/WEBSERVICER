@@ -11,10 +11,11 @@
   #}
  # read.csv(file, ...);
 #}
+library(httr)
 readcsvnew <- function()
   {
-  r<-GET("https://www.datos.gov.co/resource/rxv3-h9d8.json")
-  read.csv(r);
+  r <- GET("https://www.datos.gov.co/resource/rxv3-h9d8.json")
+  read.csv(r)
   }
 
 
