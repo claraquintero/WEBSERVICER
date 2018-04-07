@@ -13,7 +13,7 @@
 #}
 readcsvnew <- function()
   {
-  r<-GET(https://www.datos.gov.co/api/views/79fi-zm8c/rows.csv?accessType=DOWNLOAD)
+  r<-GET("https://www.datos.gov.co/api/views/79fi-zm8c/rows.csv?accessType=DOWNLOAD")
   read.csv(r);
   }
 
