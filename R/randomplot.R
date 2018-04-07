@@ -11,12 +11,19 @@ randomplot <- function(n, dist=c("normal", "uniform")){
   stopifnot(n < 1e6)
   
   if(dist == "normal"){
-    hist(rnorm(n))
+            #* @get /mean
+normalMean <- function(samples=10){
+  data <- rnorm(samples)
+  mean(data)
+   hist(rnorm(n))
+}
+   
   }
-  
+
   if(dist == "uniform"){
     hist(runif(n))
   }
+
   
   #return nothing
   invisible();  
