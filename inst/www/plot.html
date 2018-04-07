@@ -16,12 +16,12 @@
         $("#submitbutton").attr("disabled", "disabled");
         
         //read the value for 'myname'
-       // var nfield = parseInt($("#nfield").val());
+        var nfield = parseInt($("#nfield").val());
         var distfield = $("#distfield").val();
         
         //create the plot area on the plotdiv element
         var req = $("#plotdiv").rplot("randomplot", {
-         // n : nfield,
+          n : nfield,
           dist : distfield
         })
 

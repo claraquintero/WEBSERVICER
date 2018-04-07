@@ -5,28 +5,21 @@
 #' @export
 #' @param n numer of random values 
 #' @param dist one of "normal" or "uniform".
-randomplot <- function(dist=c("normal", "uniform")){
+#* @get /hist
+randomplot <- function(n, dist=c("normal", "uniform")){
   #input validation
   dist <- match.arg(dist)
-   #* @get /mean
-n <- function(samples=10){
-  data <- rnorm(samples)
-  n<-mean(data)*1000}
-  
   stopifnot(n < 1e6)
   
   if(dist == "normal"){
            
    hist(rnorm(n))
-
-   
-  }
+ }
 
   if(dist == "uniform"){
     hist(runif(n))
   }
-
-  
+ 
   #return nothing
   invisible();  
 }
