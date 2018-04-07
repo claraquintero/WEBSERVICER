@@ -9,7 +9,7 @@ readcsvnew <- function(file, ...){
   if(!grepl(".csv$", file)){
     stop("El archivo a cargar debe estar en el formato csv!")
   }
-  read.csv(file, ...);
+ datos <- read.csv(file, ...);
 }
 
 
