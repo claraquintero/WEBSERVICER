@@ -12,10 +12,13 @@
  # read.csv(file, ...);
 #}
 library(httr)
+library("rjson")
+
 readcsvnew <- function()
   {
-  r <- GET("https://www.datos.gov.co/resource/rxv3-h9d8.json")
-  read.csv(r)
+ 
+  json_file <- GET("https://www.datos.gov.co/resource/rxv3-h9d8.json")
+  json_data <- fromJSON(file=json_file)
   }
 
 
