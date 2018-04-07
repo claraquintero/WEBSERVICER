@@ -11,6 +11,7 @@ $(document).ready(function(){
     }, function(session){
       //on success call printsummary()
       printsummary(session);
+       $("#jsonlink").attr("href", session.getLoc() + "R/.val/json")
     });
     
     //if R returns an error, alert the error message
