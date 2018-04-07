@@ -17,7 +17,7 @@
         var myfile = $("#csvfile")[0].files[0];
         
         if(!myfile){
-          alert("No file selected.");
+          alert("Elija un archivo csv por favor");
           return;
         }
 
@@ -59,7 +59,7 @@
   <body>
     <h1>Cargando un archivo</h1>
     
-    <b>File</b> <input type="file" id="csvfile"> 
+    <b>Archivo</b> <input type="file" id="csvfile"> 
     <br />
     
     <b>Tiene encabezado?</b> <select id="header">
