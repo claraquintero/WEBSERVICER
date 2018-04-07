@@ -1,23 +1,3 @@
-OpenCPU APP: appdemo
+WEB SERVICE CON R 
 ====================
-  
-The purpose of this OpenCPU app is to demonstrate how to use the [opencpu.js](http://github.com/jeroenooms/opencpu.js) library for calling R functions from Javascript using OpenCPU.  
-
-Cloud Demo
-----------
-
-Try the application online at the OpenCPU apps public demo server: https://public.opencpu.org/apps.html
-
-Use locally
------------
-
-To run the app in your local R session:
-
-    #install app
-    library(devtools)
-    install_github("appdemo", "opencpu")
-    
-    #load in opencpu
-    library(opencpu)
-    opencpu$browse("/library/appdemo/www")
-
+Se requiere implementar un servicio en la nube utilizando R como programa de procesamiento de información, que cumpla con las características de una aplicación RESTFUL, que pueda operar información de un archivo de CSV que se puede cargar manualmente, previamente definida. 
