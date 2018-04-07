@@ -26,8 +26,8 @@
 
         //perform the request
         var req = ocpu.call("readcsvnew", {
-          file : myfile,
-          header : myheader
+          //file : myfile,
+          //header : myheader
         }, function(session){
           $("#printlink").attr("href", session.getLoc() + "R/.val/print")
           $("#rdalink").attr("href", session.getLoc() + "R/.val/rda")
