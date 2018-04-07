@@ -9,7 +9,7 @@ randomplot <- function(dist=c("normal", "uniform")){
   #input validation
   dist <- match.arg(dist)
    #* @get /mean
-normalMean <- function(samples=10){
+n <- function(samples=10){
   data <- rnorm(samples)
   n<-mean(data)*1000}
   
